@@ -33,7 +33,7 @@ class Page1 extends Component {
         {this.props.page === 11 ? (
           <div className="page">
           <Thanks className="mb20"/>
-            <h4 style={styles.fadeInUp1s}>感谢有你，一路前行</h4>
+            <h4 style={styles.fadeInUp1s}>Thang you all the way</h4>
             <ul>
               <li style={styles.fadeInUp1_5s}>React</li>
               <li style={styles.fadeInUp1_5s}>rest.js</li>
@@ -44,7 +44,6 @@ class Page1 extends Component {
               <li style={styles.fadeInUp3s}>Typed.js</li>
               <li style={styles.fadeInUp3s}>...</li>
             </ul>
-            <h4 style={styles.fadeInUp3s}>特别鸣谢：@李锐</h4>
           </div>
         ) : null}
       </StyleRoot>

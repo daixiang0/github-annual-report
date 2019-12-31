@@ -34,22 +34,22 @@ class Page1 extends Component {
           <div className="page">
           <Prize className="mb20"/>
             <p style={styles.fadeInUp1s}>
-              你的年度语言是<span className="stress">{this.props.info.mostLanguage.name}</span>
+              Your top programming language of this year is<span className="stress">{this.props.info.mostLanguage.name}</span>
             </p>
-            <p style={styles.fadeInUp1_5s}>一年中</p>
+            <p style={styles.fadeInUp1_5s}>In this year, </p>
             <p style={styles.fadeInUp2s}>
-              你向<span className="stress">{this.props.info.mostLanguage.repoNums}</span>个{this.props.info.mostLanguage.name}
-              仓库
+              you commit to <span className="stress">{this.props.info.mostLanguage.repoNums}</span>个{this.props.info.mostLanguage.name}
+              repo
             </p>
             <p style={styles.fadeInUp2_5s}>
-              提交了<span className="stress">{this.props.info.mostLanguage.commitNums}</span>次代码
+              for <span className="stress">{this.props.info.mostLanguage.commitNums}</span>times
             </p>
           </div>
         ) : this.props.page === 10 ? (
           <div className="page">
           <Prize className="mb20"/>
-            <p style={styles.fadeInUp1s}>本年度</p>
-            <p style={styles.fadeInUp1_5s}>所有的编程语言</p>
+            <p style={styles.fadeInUp1s}></p>
+            <p style={styles.fadeInUp1_5s}></p>
             <p style={styles.fadeInUp2s}>在你面前</p>
             <p style={styles.fadeInUp2_5s}>都已自惭形秽</p>
           </div>

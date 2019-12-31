@@ -33,36 +33,36 @@ class Page2 extends Component {
         {this.props.page === 3 ? (
           <div className="page">
             <Line className="mb20"/>
-            <p style={styles.fadeInUp1s}>与此同时</p>
+            <p style={styles.fadeInUp1s}>Meanwhile</p>
             <p style={styles.fadeInUp1s} className="mb20">
-              在你的敲击下
+              With your hits
             </p>
             {this.props.info.addLines !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                增加了
+                add
                 <span className="stress">{this.props.info.addLines}</span>
-                行代码
+                lines
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>没有增加代码</p>
+              <p style={styles.fadeInUp2s}>no added lines</p>
             )}
             {this.props.info.addLines !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                删除了
+                delete
                 <span className="stress">{this.props.info.deleteLines}</span>
-                行代码
+                lines
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>没有删除代码</p>
+              <p style={styles.fadeInUp2s}>no deleted lines</p>
             )}
             {this.props.info.addLines !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                总共有
+                in all, you change
                 <span className="stress">{this.props.info.totalLines}</span>
-                行代码被修改
+                lines
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>没有代码被修改</p>
+              <p style={styles.fadeInUp2s}>no changes</p>
             )}
           </div>
         ) : null}

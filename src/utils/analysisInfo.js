@@ -37,10 +37,10 @@ const getWeekDays = (info, repos) => {
     });
   });
   if (info.weekendNums > info.weekdayNums) {
-    info.likeWeekType.name = '周末';
+    info.likeWeekType.name = 'weekday';
     info.likeWeekType.count = info.weekendNums;
   } else {
-    info.likeWeekType.name = '工作日';
+    info.likeWeekType.name = 'workday';
     info.likeWeekType.count = info.weekdayNums;
   }
 };
@@ -103,13 +103,13 @@ const getPeriod = (info, repos) => {
     }
   });
   if (likePeriod.name === 'morningNums') {
-    likePeriod.name = '清晨';
+    likePeriod.name = 'morning';
   } else if (likePeriod.name === 'afternoonNums') {
-    likePeriod.name = '午后';
+    likePeriod.name = 'afternoon';
   } else if (likePeriod.name === 'eveningNums') {
-    likePeriod.name = '傍晚';
+    likePeriod.name = 'evening';
   } else if (likePeriod.name === 'dawnNums') {
-    likePeriod.name = '凌晨';
+    likePeriod.name = 'dawn';
   }
 };
 

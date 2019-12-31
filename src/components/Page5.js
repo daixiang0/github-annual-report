@@ -34,28 +34,27 @@ class Page1 extends Component {
           <div className="page">
           <Moon className="mb20"/>
             <p style={styles.fadeInUp1s} className="stress">
-              {this.props.info.latestDay.date.getMonth() + 1}月{this.props.info.latestDay.date.getDate()}日
+              At{this.props.info.latestDay.date.getMonth() + 1}.{this.props.info.latestDay.date.getDate()}
             </p>
-            <p style={styles.fadeInUp1s}>这一天你睡得很晚</p>
+            <p style={styles.fadeInUp1s}>You sleep very late</p>
             <p style={styles.fadeInUp1_5s} className="mb20">
               <span className="stress">
-                {this.props.info.latestDay.date.getHours()}点{this.props.info.latestDay.date.getMinutes()}分
+                At{this.props.info.latestDay.date.getHours()}:{this.props.info.latestDay.date.getMinutes()}
               </span>
-              你还在与代码为伴
+              You still play with codes
             </p>
-            <p style={styles.fadeInUp2s}>那一刻</p>
+            <p style={styles.fadeInUp2s}>At that moment</p>
             <p style={styles.fadeInUp2s}>
-              你向
+              You commited to
               <span className="stress">{this.props.info.latestDay.repo}</span>
-              仓库提交了代码
+              repo
             </p>
           </div>
         ) : this.props.page === 5 ? (
           <div className="page">
           <Moon className="mb20"/>
-            <p style={styles.fadeInUp1s}>每一天</p>
-            <p style={styles.fadeInUp1s}>你休息得都很好</p>
-            <p style={styles.fadeInUp1s}>早早地完成了代码提交工作</p>
+            <p style={styles.fadeInUp1s}>Every day</p>
+            <p style={styles.fadeInUp1s}>You have good sleep</p>
           </div>
         ) : null}
       </StyleRoot>

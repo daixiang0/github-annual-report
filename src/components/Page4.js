@@ -37,24 +37,24 @@ class Page1 extends Component {
               {this.props.info.specialDay.date.getMonth() + 1}月{this.props.info.specialDay.date.getDate()}日
             </p>
             <p style={styles.fadeInUp1_5s} className="mb20">
-              大概是很特别的一天
+              may be a special day
             </p>
-            <p style={styles.fadeInUp2s}>这一天里</p>
+            <p style={styles.fadeInUp2s}>at this day</p>
             <p style={styles.fadeInUp2_5s}>
-              你向
+              you commited to
               <span className="stress">{this.props.info.specialDay.repo}</span>
-              仓库提交了
+              about
             </p>
             <p style={styles.fadeInUp3s}>
               <span className="stress">{this.props.info.specialDay.count}</span>
-              次代码
+              times
             </p>
           </div>
         ) : this.props.page === 4 ? (
           <div className="page">
           <Day/>
-            <p style={styles.fadeInUp1s}>你没有什么特别的一天</p>
-            <p style={styles.fadeInUp1s}>你的每天都一样精彩</p>
+            <p style={styles.fadeInUp1s}>You do not have special day</p>
+            <p style={styles.fadeInUp1s}>Every day is special day</p>
           </div>
         ) : null}
       </StyleRoot>

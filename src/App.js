@@ -42,7 +42,7 @@ class App extends Component {
       failed: false,
       loading: true,
       firstPage: true,
-      status: '正在读取数据...',
+      status: 'loading...',
       requestNums: 0,
       fineshedRequest: 0,
       failedRequest: 0,
@@ -71,14 +71,14 @@ class App extends Component {
       clearInterval(this.timer2);
     } else {
       this.setState({
-        status: `请求完成比：${this.state.fineshedRequest}/${this.state.requestNums}，失败：${this.state.failedRequest}`,
+        status: `succuess：${this.state.fineshedRequest}/${this.state.requestNums}%，fail：${this.state.failedRequest}%`,
       });
     }
   }
 
   tips2() {
     this.setState({
-      status: `如长时间请求无变化，请刷新或更换浏览器`,
+      status: `Please refresh or change browse if show nothing`,
     });
   }
 
@@ -643,11 +643,11 @@ class App extends Component {
     } else {
       firstPage = (
         <div className="header">
-          <p>想看自己2019年度GitHub代码报告么？</p>
-          <p>请先登录</p>
+          <p>Do you want to view annual github report?</p>
+          <p>Please login first</p>
           <Button className="login" type="primary" onClick={this.login}>
             <GitHub className="github" />
-            登录
+            login
           </Button>
         </div>
       );
@@ -659,7 +659,7 @@ class App extends Component {
             {this.state.failed ? (
               <Alert
                 className="failed"
-                message="获取你的GitHub年终总结失败，请刷新重试"
+                message="Failed to load, please try to refresh"
                 type="error"
                 closable
                 afterClose={this.onClose}

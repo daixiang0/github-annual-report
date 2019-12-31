@@ -33,21 +33,21 @@ class Page1 extends Component {
         {this.props.page === 8 ? (
           <div className="page">
           <Talk className="mb20"/>
-            <p style={styles.fadeInUp1s}>作为社区的一员</p>
-            <p style={styles.fadeInUp1_5s}>2019 年</p>
+            <p style={styles.fadeInUp1s}>As a member of the community</p>
+            <p style={styles.fadeInUp1_5s}>In 2019 </p>
             {this.props.info.issueNums !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                你参与了<span className="stress">{this.props.info.issueNums}</span>个问题的讨论
+                You join <span className="stress">{this.props.info.issueNums}</span> issue
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>你暗中观察，没有参与到讨论中</p>
+              <p style={styles.fadeInUp2s}>You observe in secret</p>
             )}
             {this.props.info.starNums !== 0 ? (
               <p style={styles.fadeInUp2_5s}>
-                收藏了<span className="stress">{this.props.info.starNums}</span>个仓库
+                star <span className="stress">{this.props.info.starNums}</span> repos
               </p>
             ) : (
-              <p style={styles.fadeInUp2_5s}>没发现值得你收藏的仓库</p>
+              <p style={styles.fadeInUp2_5s}>no repos wish your star</p>
             )}
           </div>
         ) : null}

@@ -33,45 +33,45 @@ class Page2 extends Component {
         {this.props.page === 2 ? (
           <div className="page">
             <Repo className="mb20"/>
-            <p style={styles.fadeInUp1s}>这一年里</p>
+            <p style={styles.fadeInUp1s}>In this year</p>
             <p style={styles.fadeInUp1s} className="mb20">
-              你一共
+              You have
             </p>
             {this.props.info.languageNums !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                使用了
+                used
                 <span className="stress">{this.props.info.languageNums}</span>
-                种编程语言
+                programming languages
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>敲击了很多文本</p>
+              <p style={styles.fadeInUp2s}>hit keyboard</p>
             )}
             {this.props.info.repoNums !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                通过GitHub向
+                committed to
                 <span className="stress">{this.props.info.repoNums}</span>
-                个代码仓库的主分支
+                repos onto master branch
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>在本地通过多个代码仓库</p>
+              <p style={styles.fadeInUp2s}>repo commit</p>
             )}
             {this.props.info.commitNums !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                提交了
+                committed
                 <span className="stress">{this.props.info.commitNums}</span>
-                次代码
+                times
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>提交了多次代码</p>
+              <p style={styles.fadeInUp2s}>commit num</p>
             )}
             {this.props.info.eventNums !== 0 ? (
               <p style={styles.fadeInUp2s}>
-                活跃了
+                active for
                 <span className="stress">{this.props.info.eventNums}</span>
-                天的时间
+                days
               </p>
             ) : (
-              <p style={styles.fadeInUp2s}>在社区中比较沉寂</p>
+              <p style={styles.fadeInUp2s}>active</p>
             )}
           </div>
         ) : null}
